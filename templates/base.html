@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Mi proyecto{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
     <header>
-        <img src="{% static 'images/' %}" alt="logo" class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="logo" class="logo">
         <nav>
             <ul>
                 <li><a href="{% url 'inicio' %}">Inicio</a></li>
