@@ -3,6 +3,12 @@
 {% block title%}Inicio{% endblock %}
 
 {% block content %}
-    <h1>Página principal</h1>
-    <p>Bienvenido a la primera aplicación.</p>
+    <h2>Lista de Productos Dinámicos</h2>
+    <ul>
+        {% for item in items %}
+            <li>ID: {{ item.id }} - {{ item.nombre }} - {{ item.precio }}</li>
+        {% empty %}
+            <li>No hay elementos disponibles.</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
